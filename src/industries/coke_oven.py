@@ -26,7 +26,6 @@ industry.economy_variations[
 ].prob_in_game = "0"  # do not build during gameplay
 
 
-
 industry.economy_variations["BASIC_TROPIC"].enabled = True
 industry.economy_variations[
     "BASIC_TROPIC"
@@ -81,10 +80,12 @@ spriteset_oven_battery_larry_car = industry.add_spriteset(
     sprites=[(150, 10, 64, 122, -31, -91)],
 )
 spriteset_pusher_rails_base = industry.add_spriteset(
-    sprites=[(220, 10, 64, 122, -31, -91)], yextent=8  # prevents gantry flickering ??
+    sprites=[(220, 10, 64, 122, -31, -91)],
+    yextent=8,  # prevents gantry flickering ??
 )
 spriteset_pusher_car = industry.add_spriteset(
-    sprites=[(10, 234, 64, 64, -31, -32)], yextent=8  # prevents gantry flickering ??
+    sprites=[(10, 234, 64, 64, -31, -32)],
+    yextent=8,  # prevents gantry flickering ??
 )
 spriteset_pipe_gantry = industry.add_spriteset(
     sprites=[(290, 10, 64, 122, -31, -91)],

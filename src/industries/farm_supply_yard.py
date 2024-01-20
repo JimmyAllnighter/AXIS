@@ -15,7 +15,7 @@ industry = IndustrySecondary(
 
 industry.economy_variations["BASIC_TROPIC"].enabled = True
 industry.economy_variations["BASIC_TROPIC"].accept_cargos_with_input_ratios = [
-    ("VEHI", 8),  
+    ("VEHI", 8),
     ("PETR", 8),
     ("FERT", 8),
 ]
@@ -27,7 +27,7 @@ industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_output_ratios 
 industry.economy_variations["STEELTOWN"].enabled = True
 industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
     ("NHNO", 8),
-    ("VEHI", 8),  
+    ("VEHI", 8),
     ("PETR", 8),
     ("TYRE", 8),
 ]

@@ -14,14 +14,17 @@ industry = IndustrySecondary(
     fund_cost_multiplier="170",
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
-industry.economy_variations['STEELTOWN'].enabled = True
-industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [('RFPR', 5), ('CTAR', 3)]
+industry.economy_variations["STEELTOWN"].enabled = True
+industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
+    ("RFPR", 5),
+    ("CTAR", 3),
+]
 industry.economy_variations["STEELTOWN"].prod_cargo_types_with_output_ratios = [
     ("C2H4", 5),
     ("PETR", 3),
-#separate cracker for fuel?
+    # separate cracker for fuel?
 ]
 
 

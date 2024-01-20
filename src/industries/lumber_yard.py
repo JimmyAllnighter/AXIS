@@ -14,7 +14,7 @@ industry = IndustrySecondary(
     pollution_and_squalor_factor=1,
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
 industry.economy_variations["IN_A_HOT_COUNTRY"].enabled = True
 industry.economy_variations["IN_A_HOT_COUNTRY"].accept_cargos_with_input_ratios = [
@@ -28,13 +28,13 @@ industry.economy_variations["IN_A_HOT_COUNTRY"].prod_cargo_types_with_output_rat
 industry.economy_variations["BASIC_TROPIC"].enabled = True
 industry.economy_variations["BASIC_TROPIC"].accept_cargos_with_input_ratios = [
     ("WDPR", 4),
-    ("GLAS", 2), 
+    ("GLAS", 2),
     ("STSE", 1),
-    ("COAT", 1),  
+    ("COAT", 1),
 ]
 industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_output_ratios = [
     ("BDMT", 6),
-    ("MNSP", 6)
+    ("MNSP", 6),
 ]
 
 

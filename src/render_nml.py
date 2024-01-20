@@ -1,26 +1,25 @@
-print("[RENDER NML] render nml")
-
 import codecs  # used for writing files - more unicode friendly than standard open() module
-
-import sys
 import os
-
-currentdir = os.curdir
+import sys
 from time import time
 
 import firs
-import utils
 import global_constants
-from polar_fox import git_info
+import utils
+from chameleon import PageTemplateLoader  # chameleon used in most template cases
 from incompatible_grfs import incompatible_grfs
-from perm_storage_mappings import perm_storage_mappings, get_perm_num
+from perm_storage_mappings import get_perm_num, perm_storage_mappings
+from polar_fox import git_info
+
+print("[RENDER NML] render nml")
+
+currentdir = os.curdir
 
 registered_cargos = firs.registered_cargos
 registered_industries = firs.registered_industries
 registered_economies = firs.registered_economies
 incompatible_industries = firs.incompatible_industries
 
-from chameleon import PageTemplateLoader  # chameleon used in most template cases
 
 # setup the places we look for templates
 templates = PageTemplateLoader(
@@ -33,6 +32,7 @@ if not os.path.exists(generated_nml_path):
 
 # get args passed by makefile
 makefile_args = utils.get_makefile_args(sys)
+
 
 def render_header_item_nml(header_item):
     template = templates[header_item + ".pynml"]

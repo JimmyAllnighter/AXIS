@@ -23,7 +23,7 @@ industry = IndustrySecondary(
     pollution_and_squalor_factor=2,
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
 industry.economy_variations["STEELTOWN"].enabled = True
 industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
@@ -51,9 +51,9 @@ industry.economy_variations["IN_A_HOT_COUNTRY"].prod_cargo_types_with_output_rat
 industry.economy_variations["BASIC_TROPIC"].enabled = True
 industry.economy_variations["BASIC_TROPIC"].accept_cargos_with_input_ratios = [
     ("COKE", 2),
-    ("SAND", 2),  
-    ("LIME", 2),  
-    ("SLAG", 2),  
+    ("SAND", 2),
+    ("LIME", 2),
+    ("SLAG", 2),
 ]
 industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_output_ratios = [
     ("BDMT", 6),
@@ -155,70 +155,60 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_1],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_2",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_2],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_3",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_3],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_4",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_4],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_5",
     ground_sprite=spriteset_ground_anim,
     ground_overlay=spriteset_ground_overlay_anim,
     building_sprites=[spriteset_5],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_6",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_6],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_7",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_7],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_8",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_8],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_9",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_9],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_10",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_10],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_11",
@@ -226,21 +216,18 @@ industry.add_spritelayout(
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_11],
     smoke_sprites=[sprite_smoke_2, sprite_smoke_1],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_clay_staithe",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_clay_staithe],
-
 )
 industry.add_spritelayout(
     id="cement_plant_spritelayout_stone_staithe",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_stone_staithe],
-
 )
 
 industry.add_industry_layout(

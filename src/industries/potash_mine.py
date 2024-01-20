@@ -17,7 +17,6 @@ industry = IndustryPrimaryExtractive(
 # industry.economy_variations['BASIC_ARCTIC'].enabled = True
 
 
-
 industry.add_tile(
     id="potash_mine_tile_1",
     animation_length=81,

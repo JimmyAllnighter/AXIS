@@ -3,7 +3,12 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="chlor_alkali_plant",
     accept_cargos_with_input_ratios=[("SALT", 8)],
-    prod_cargo_types_with_output_ratios=[("ACID", 2), ("CHLO", 2), ("LYE_", 2), ("H2__", 2)],
+    prod_cargo_types_with_output_ratios=[
+        ("ACID", 2),
+        ("CHLO", 2),
+        ("LYE_", 2),
+        ("H2__", 2),
+    ],
     prob_in_game="3",
     prob_map_gen="5",
     prod_multiplier="[0, 0]",
@@ -14,8 +19,10 @@ industry = IndustrySecondary(
     pollution_and_squalor_factor=2,
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].prod_cargo_types_with_output_ratios = [('HYAC', 4), ('CHLO', 2), ('LYE_', 2)]
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
+industry.economy_variations[
+    "BETTER_LIVING_THROUGH_CHEMISTRY"
+].prod_cargo_types_with_output_ratios = [("HYAC", 4), ("CHLO", 2), ("LYE_", 2)]
 
 industry.economy_variations["STEELTOWN"].enabled = True
 industry.economy_variations[

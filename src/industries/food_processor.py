@@ -30,7 +30,6 @@ industry.economy_variations["BASIC_TROPIC"].accept_cargos_with_input_ratios = [
 ]
 
 
-
 industry.economy_variations["IN_A_HOT_COUNTRY"].enabled = True
 industry.economy_variations["IN_A_HOT_COUNTRY"].accept_cargos_with_input_ratios = [
     ("NUTS", 6),
@@ -47,7 +46,6 @@ industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
     ("FISH", 4),
     ("MNSP", 2),
     ("SALT", 2),
-
 ]
 
 industry.add_tile(

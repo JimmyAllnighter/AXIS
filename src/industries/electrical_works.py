@@ -1,10 +1,15 @@
 from industry import IndustrySecondary, TileLocationChecks
 
 
-
 industry = IndustrySecondary(
     id="electrical_works",
-    accept_cargos_with_input_ratios=[("STAL", 3), ("COPR", 2), ("RFPR", 1), ("STWR", 1), ("PPAR", 1)],
+    accept_cargos_with_input_ratios=[
+        ("STAL", 3),
+        ("COPR", 2),
+        ("RFPR", 1),
+        ("STWR", 1),
+        ("PPAR", 1),
+    ],
     combined_cargos_boost_prod=True,
     prod_cargo_types_with_output_ratios=[("POWR", 8)],
     prob_in_game="3",
@@ -15,7 +20,7 @@ industry = IndustrySecondary(
     fund_cost_multiplier="120",
 )
 
-industry.economy_variations['STEELTOWN'].enabled = True
+industry.economy_variations["STEELTOWN"].enabled = True
 
 
 industry.economy_variations["BASIC_TROPIC"].enabled = True

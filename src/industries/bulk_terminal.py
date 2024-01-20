@@ -29,12 +29,24 @@ industry.economy_variations["IN_A_HOT_COUNTRY"].prod_cargo_types_with_multiplier
     ("FMSP", 12),
 ]
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].accept_cargo_types = []
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].prod_cargo_types_with_multipliers = [('OIL_', 20), ('POTA', 12), ('PHOS', 12), ('MEOH', 12)]
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].accept_cargo_types = []
+industry.economy_variations[
+    "BETTER_LIVING_THROUGH_CHEMISTRY"
+].prod_cargo_types_with_multipliers = [
+    ("OIL_", 20),
+    ("POTA", 12),
+    ("PHOS", 12),
+    ("MEOH", 12),
+]
 
 industry.economy_variations["STEELTOWN"].enabled = True
-industry.economy_variations["STEELTOWN"].accept_cargo_types = ["FOOD", "CMNT", "STSH", "VEHI"]
+industry.economy_variations["STEELTOWN"].accept_cargo_types = [
+    "FOOD",
+    "CMNT",
+    "STSH",
+    "VEHI",
+]
 industry.economy_variations["STEELTOWN"].prod_cargo_types_with_multipliers = [
     ("IORE", 19),
     ("ALO_", 19),
@@ -43,7 +55,12 @@ industry.economy_variations["STEELTOWN"].prod_cargo_types_with_multipliers = [
 ]
 
 industry.economy_variations["BASIC_TROPIC"].enabled = True
-industry.economy_variations["BASIC_TROPIC"].accept_cargo_types = ["BDMT", "FERT", "BOOM", "VEHI"]
+industry.economy_variations["BASIC_TROPIC"].accept_cargo_types = [
+    "BDMT",
+    "FERT",
+    "BOOM",
+    "VEHI",
+]
 industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_multipliers = [
     ("ACET", 19),
     ("COAL", 19),

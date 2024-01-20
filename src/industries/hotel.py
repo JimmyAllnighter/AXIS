@@ -31,7 +31,7 @@ industry.economy_variations["STEELTOWN"].accept_cargo_types = [
     "PASS",
 ]
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
 industry.economy_variations["IN_A_HOT_COUNTRY"].enabled = True
 
@@ -48,19 +48,11 @@ spriteset_ground_overlay = industry.add_spriteset(
     type="slab",
 )
 
-sprite_ground_3 = industry.add_sprite(
-    sprite_number=1448
-)
-sprite_ground_4 = industry.add_sprite(
-    sprite_number=1451
-)
+sprite_ground_3 = industry.add_sprite(sprite_number=1448)
+sprite_ground_4 = industry.add_sprite(sprite_number=1451)
 
-sprite_ground_5 = industry.add_sprite(
-    sprite_number=4485
-)
-sprite_ground_6 = industry.add_sprite(
-    sprite_number=4486
-)
+sprite_ground_5 = industry.add_sprite(sprite_number=4485)
+sprite_ground_6 = industry.add_sprite(sprite_number=4486)
 
 sprite_building_1 = industry.add_sprite(
     sprite_number="(terrain_type == TILETYPE_SNOW) ? 4583 : 4475"
@@ -68,18 +60,10 @@ sprite_building_1 = industry.add_sprite(
 sprite_building_2 = industry.add_sprite(
     sprite_number="(terrain_type == TILETYPE_SNOW) ? 4584 : 4476"
 )
-sprite_building_3 = industry.add_sprite(
-    sprite_number=1450
-)
-sprite_building_4 = industry.add_sprite(
-    sprite_number=1453
-)
-sprite_building_5 = industry.add_sprite(
-    sprite_number=4491
-)
-sprite_building_6 = industry.add_sprite(
-    sprite_number=4492
-)
+sprite_building_3 = industry.add_sprite(sprite_number=1450)
+sprite_building_4 = industry.add_sprite(sprite_number=1453)
+sprite_building_5 = industry.add_sprite(sprite_number=4491)
+sprite_building_6 = industry.add_sprite(sprite_number=4492)
 
 industry.add_spritelayout(
     id="hotel_spritelayout_1",

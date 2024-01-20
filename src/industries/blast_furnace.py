@@ -22,7 +22,7 @@ industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
 ]
 industry.economy_variations["STEELTOWN"].prod_cargo_types_with_output_ratios = [
     ("IRON", 6),
-#    ("CSTI", 2),
+    #    ("CSTI", 2),
     ("SLAG", 2),
 ]
 industry.economy_variations["STEELTOWN"].prob_map_gen = "3"

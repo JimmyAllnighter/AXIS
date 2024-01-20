@@ -23,8 +23,6 @@ industry = IndustrySecondary(
 industry.economy_variations["BASIC_TROPIC"].enabled = True
 
 
-
-
 industry.add_tile(
     id="bakery_tile_1",
     animation_length=6,

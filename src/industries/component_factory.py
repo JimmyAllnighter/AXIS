@@ -33,10 +33,10 @@ industry.economy_variations['IN_A_HOT_COUNTRY'].prod_cargo_types_with_output_rat
 industry.economy_variations["BASIC_TROPIC"].enabled = True
 industry.economy_variations["BASIC_TROPIC"].accept_cargos_with_input_ratios = [
     ("STSE", 2),
-    ("TYRE", 2),  
-    ("PLAS", 2),  
-    ("TEXT", 2),  
-    ("COAT", 2),  
+    ("TYRE", 2),
+    ("PLAS", 2),
+    ("TEXT", 2),
+    ("COAT", 2),
 ]
 
 

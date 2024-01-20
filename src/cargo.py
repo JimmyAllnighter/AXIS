@@ -9,22 +9,19 @@ import os.path
 
 import global_constants as global_constants
 import utils as utils
+from cargos import registered_cargos
+from chameleon import PageTemplateLoader  # chameleon used in most template cases
+from economies import registered_economies
 
 currentdir = os.curdir
-
-from chameleon import PageTemplateLoader  # chameleon used in most template cases
-
 # setup the places we look for templates
 templates = PageTemplateLoader(
     os.path.join(currentdir, "src", "templates"), format="text"
 )
 
-from economies import registered_economies
-from cargos import registered_cargos
-
 
 class Cargo(object):
-    """ Base class to hold cargos"""
+    """Base class to hold cargos"""
 
     def __init__(self, id, **kwargs):
         self.id = id

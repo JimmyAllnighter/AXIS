@@ -18,7 +18,7 @@ industry = IndustryPrimaryOrganic(
     override_default_construction_states=True,
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 industry.economy_variations["IN_A_HOT_COUNTRY"].enabled = True
 
 industry.economy_variations["STEELTOWN"].enabled = True
@@ -30,7 +30,6 @@ industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_multipliers = 
     ("FRUT", 16),
     ("OLSD", 13),
 ]
-
 
 
 industry.add_tile(

@@ -7,11 +7,13 @@
 
 import os
 
-currentdir = os.curdir
-
+import cargos
+import economies
 import global_constants
+import industries
 import utils
 
+currentdir = os.curdir
 # setting up a cache for compiled chameleon templates can significantly speed up template rendering
 chameleon_cache_path = os.path.join(currentdir, global_constants.chameleon_cache_dir)
 if not os.path.exists(chameleon_cache_path):
@@ -22,14 +24,8 @@ generated_files_path = os.path.join(currentdir, global_constants.generated_files
 if not os.path.exists(generated_files_path):
     os.mkdir(generated_files_path)
 
-import cargos
-
 registered_cargos = cargos.registered_cargos
-import industries
-
 registered_industries = industries.registered_industries
-import economies
-
 registered_economies = economies.registered_economies
 
 # guard against mistakes with cargo ids in economies

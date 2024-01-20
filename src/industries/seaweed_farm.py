@@ -32,7 +32,6 @@ industry.economy_variations["STEELTOWN"].prod_cargo_types_with_multipliers = [
 ]
 
 
-
 # industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
 
 industry.add_tile(

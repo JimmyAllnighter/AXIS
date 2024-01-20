@@ -23,7 +23,7 @@ industry.add_tile(
         always_allow_founder=False,
         require_houses_nearby=True,
         disallow_industry_adjacent=True,
-        require_effectively_flat=True, 
+        require_effectively_flat=True,
     ),
 )
 

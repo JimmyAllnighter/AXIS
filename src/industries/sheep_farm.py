@@ -20,11 +20,10 @@ industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_multipliers = 
 ]
 
 
-
 industry.add_tile(
     id="sheep_farm_tile_1",
     location_checks=TileLocationChecks(
-        disallow_coast=True, 
+        disallow_coast=True,
         disallow_industry_adjacent=True,
         disallow_desert=True,
     ),

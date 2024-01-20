@@ -14,13 +14,13 @@ industry = IndustrySecondary(
             72,
         ]
     ),
-    name="string(STR_IND_COPPER_CONCENTRATOR)", 
+    name="string(STR_IND_COPPER_CONCENTRATOR)",
     nearby_station_name="string(STR_STATION_SMELTER)",
     fund_cost_multiplier="200",
     graphics_change_dates=[],
 )
 
-industry.economy_variations['BASIC_TROPIC'].enabled = True
+industry.economy_variations["BASIC_TROPIC"].enabled = True
 industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_output_ratios = [
     ("COCO", 6),
     ("RAMT", 3),
@@ -28,9 +28,6 @@ industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_output_ratios 
 
 
 # industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
-
-
-
 
 
 industry.add_tile(

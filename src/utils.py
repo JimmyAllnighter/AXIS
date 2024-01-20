@@ -1,7 +1,8 @@
-from PIL import Image
-import os.path
 import codecs  # used for writing files - more unicode friendly than standard open() module
+import os.path
+
 import global_constants
+from PIL import Image
 from polar_fox import git_info
 
 

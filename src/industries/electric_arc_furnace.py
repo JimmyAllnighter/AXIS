@@ -4,7 +4,7 @@ industry = IndustrySecondary(
     id="electric_arc_furnace",
     accept_cargos_with_input_ratios=[
         ("SCMT", 4),
-        ("FECR", 2), 
+        ("FECR", 2),
         ("QLME", 1),
         ("O2__", 1),
     ],
@@ -167,28 +167,24 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[],
-
 )
 industry.add_spritelayout(
     id="electric_arc_furnace_spritelayout_large_furnace_shed_1",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_large_shed_1],
-
 )
 industry.add_spritelayout(
     id="electric_arc_furnace_spritelayout_large_furnace_shed_2",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_large_shed_2],
-
 )
 industry.add_spritelayout(
     id="electric_arc_furnace_spritelayout_large_furnace_shed_3",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_large_shed_3],
-
     smoke_sprites=[
         sprite_smoke_coolers_1,
         sprite_smoke_coolers_2,

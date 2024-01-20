@@ -17,9 +17,9 @@ industry = IndustryTertiary(
     fund_cost_multiplier="15",
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
-industry.economy_variations['STEELTOWN'].enabled = True
+industry.economy_variations["STEELTOWN"].enabled = True
 industry.economy_variations["STEELTOWN"].accept_cargo_types = ["FOOD"]
 
 industry.add_tile(

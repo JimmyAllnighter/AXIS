@@ -19,14 +19,14 @@ industry = IndustryPrimaryExtractive(
     ),
     prospect_chance="0.75",
     name="string(STR_IND_SALT_EVAPORATOR)",
-    nearby_station_name="string(STR_STATION_SALT)",  
+    nearby_station_name="string(STR_STATION_SALT)",
     fund_cost_multiplier="88",
     pollution_and_squalor_factor=1,
 )
 
 industry.economy_variations["BASIC_ARCTIC"].enabled = True
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
 industry.economy_variations["STEELTOWN"].enabled = True
 
@@ -134,7 +134,12 @@ industry.add_magic_spritelayout(
 industry.add_industry_layout(
     id="salt_evaporator_industry_layout_1",
     layout=[
-        (0, 0, "salt_evaporator_tile_2", "salt_evaporator_spritelayout_coast_warehouse"),
+        (
+            0,
+            0,
+            "salt_evaporator_tile_2",
+            "salt_evaporator_spritelayout_coast_warehouse",
+        ),
         (0, 1, "255", "spritelayout_null"),
         (0, 2, "255", "spritelayout_null"),
         (0, 3, "255", "spritelayout_null"),
@@ -188,7 +193,12 @@ industry.add_industry_layout(
 industry.add_industry_layout(
     id="salt_evaporator_industry_layout_2",
     layout=[
-        (0, 0, "salt_evaporator_tile_2", "salt_evaporator_spritelayout_coast_warehouse"),
+        (
+            0,
+            0,
+            "salt_evaporator_tile_2",
+            "salt_evaporator_spritelayout_coast_warehouse",
+        ),
         (0, 1, "255", "spritelayout_null"),
         (0, 2, "255", "spritelayout_null"),
         (0, 3, "255", "spritelayout_null"),
@@ -249,7 +259,12 @@ industry.add_industry_layout(
 industry.add_industry_layout(
     id="salt_evaporator_industry_layout_3",
     layout=[
-        (0, 0, "salt_evaporator_tile_2", "salt_evaporator_spritelayout_coast_warehouse"),
+        (
+            0,
+            0,
+            "salt_evaporator_tile_2",
+            "salt_evaporator_spritelayout_coast_warehouse",
+        ),
         (0, 1, "255", "spritelayout_null"),
         (0, 2, "255", "spritelayout_null"),
         (0, 3, "255", "spritelayout_null"),
@@ -310,7 +325,12 @@ industry.add_industry_layout(
 industry.add_industry_layout(
     id="salt_evaporator_industry_layout_4",
     layout=[
-        (0, 0, "salt_evaporator_tile_2", "salt_evaporator_spritelayout_coast_warehouse"),
+        (
+            0,
+            0,
+            "salt_evaporator_tile_2",
+            "salt_evaporator_spritelayout_coast_warehouse",
+        ),
         (0, 1, "255", "spritelayout_null"),
         (0, 2, "255", "spritelayout_null"),
         (0, 3, "255", "spritelayout_null"),

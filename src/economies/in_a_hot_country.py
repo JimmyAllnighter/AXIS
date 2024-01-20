@@ -38,5 +38,5 @@ economy = Economy(
         "sand",
         "stone",
     ],
-    cargoflow_graph_tuning={}
+    cargoflow_graph_tuning={},
 )

@@ -72,9 +72,8 @@ economy = Economy(
         "tyres",
         "vehicle_parts",
         "vehicles",
-
     ],
     # as of April 2021 this cargoflow graph is really as optimised as can be
     # the main driver is preventing ugly appearance of the edges that converge on food, most of the layout is arranged around preventing that
-    cargoflow_graph_tuning={}
+    cargoflow_graph_tuning={},
 )

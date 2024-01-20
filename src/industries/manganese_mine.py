@@ -17,8 +17,6 @@ industry = IndustryPrimaryExtractive(
 industry.economy_variations["IN_A_HOT_COUNTRY"].enabled = True
 
 
-
-
 industry.add_tile(
     id="manganese_mine_tile_1",
     animation_length=81,

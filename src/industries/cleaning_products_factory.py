@@ -19,7 +19,7 @@ industry = IndustrySecondary(
     fund_cost_multiplier="95",
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
 industry.economy_variations["STEELTOWN"].enabled = True
 industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
@@ -36,16 +36,15 @@ industry.economy_variations["STEELTOWN"].prod_cargo_types_with_output_ratios = [
 
 industry.economy_variations["BASIC_TROPIC"].enabled = True
 industry.economy_variations["BASIC_TROPIC"].accept_cargos_with_input_ratios = [
-    ("SASH", 2), 
-    ("PHAC", 2),  
-    ("ACET", 2),  
-    ("EOIL", 2),  
+    ("SASH", 2),
+    ("PHAC", 2),
+    ("ACET", 2),
+    ("EOIL", 2),
 ]
 industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_output_ratios = [
     ("SOAP", 6),
     ("GOOD", 6),
 ]
-
 
 
 # tile with animation for smoke
@@ -178,69 +177,314 @@ industry.add_spritelayout(
 industry.add_industry_layout(
     id="cleaning_products_factory_industry_layout_1",
     layout=[
-        (0, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_7"),
-        (0, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_5"),
-        (0, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_7"),
-        (0, 3, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_5"),
-        (1, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_6"),
-        (1, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_4"),
-        (1, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_6"),
-        (1, 3, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_4"),
-        (2, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_8"),
-        (2, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_3"),
-        (2, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_9"),
-        (2, 3, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_10"),
-        (3, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_1"),
-        (3, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_2"),
+        (
+            0,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_7",
+        ),
+        (
+            0,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_5",
+        ),
+        (
+            0,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_7",
+        ),
+        (
+            0,
+            3,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_5",
+        ),
+        (
+            1,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_6",
+        ),
+        (
+            1,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_4",
+        ),
+        (
+            1,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_6",
+        ),
+        (
+            1,
+            3,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_4",
+        ),
+        (
+            2,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_8",
+        ),
+        (
+            2,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_3",
+        ),
+        (
+            2,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_9",
+        ),
+        (
+            2,
+            3,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_10",
+        ),
+        (
+            3,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_1",
+        ),
+        (
+            3,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_2",
+        ),
     ],
 )
 industry.add_industry_layout(
     id="cleaning_products_factory_industry_layout_2",
     layout=[
-        (0, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_7"),
-        (0, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_5"),
-        (1, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_6"),
-        (1, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_4"),
-        (2, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_8"),
-        (2, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_3"),
-        (2, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_9"),
-        (3, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_1"),
-        (3, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_2"),
-        (3, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_10"),
+        (
+            0,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_7",
+        ),
+        (
+            0,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_5",
+        ),
+        (
+            1,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_6",
+        ),
+        (
+            1,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_4",
+        ),
+        (
+            2,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_8",
+        ),
+        (
+            2,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_3",
+        ),
+        (
+            2,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_9",
+        ),
+        (
+            3,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_1",
+        ),
+        (
+            3,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_2",
+        ),
+        (
+            3,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_10",
+        ),
     ],
 )
 industry.add_industry_layout(
     id="cleaning_products_factory_industry_layout_3",
     layout=[
-        (0, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_7"),
-        (0, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_5"),
-        (0, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_9"),
-        (1, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_6"),
-        (1, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_4"),
-        (1, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_8"),
-        (2, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_10"),
-        (2, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_8"),
-        (2, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_3"),
-        (3, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_1"),
-        (3, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_2"),
+        (
+            0,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_7",
+        ),
+        (
+            0,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_5",
+        ),
+        (
+            0,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_9",
+        ),
+        (
+            1,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_6",
+        ),
+        (
+            1,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_4",
+        ),
+        (
+            1,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_8",
+        ),
+        (
+            2,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_10",
+        ),
+        (
+            2,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_8",
+        ),
+        (
+            2,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_3",
+        ),
+        (
+            3,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_1",
+        ),
+        (
+            3,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_2",
+        ),
     ],
 )
 industry.add_industry_layout(
     id="cleaning_products_factory_industry_layout_4",
     layout=[
-        (0, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_7"),
-        (0, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_5"),
-        (0, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_7"),
-        (0, 3, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_5"),
-        (1, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_6"),
-        (1, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_4"),
-        (1, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_6"),
-        (1, 3, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_4"),
-        (2, 0, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_9"),
-        (2, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_8"),
-        (2, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_3"),
-        (2, 3, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_10"),
-        (3, 1, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_1"),
-        (3, 2, "cleaning_products_factory_tile_1", "cleaning_products_factory_spritelayout_2"),
+        (
+            0,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_7",
+        ),
+        (
+            0,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_5",
+        ),
+        (
+            0,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_7",
+        ),
+        (
+            0,
+            3,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_5",
+        ),
+        (
+            1,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_6",
+        ),
+        (
+            1,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_4",
+        ),
+        (
+            1,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_6",
+        ),
+        (
+            1,
+            3,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_4",
+        ),
+        (
+            2,
+            0,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_9",
+        ),
+        (
+            2,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_8",
+        ),
+        (
+            2,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_3",
+        ),
+        (
+            2,
+            3,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_10",
+        ),
+        (
+            3,
+            1,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_1",
+        ),
+        (
+            3,
+            2,
+            "cleaning_products_factory_tile_1",
+            "cleaning_products_factory_spritelayout_2",
+        ),
     ],
 )

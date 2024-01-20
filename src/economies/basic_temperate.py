@@ -28,5 +28,5 @@ economy = Economy(
         "steel",
     ],
     # as of March 2021 this cargoflow tuning is a temporary patch up, might need more work
-    cargoflow_graph_tuning={}
+    cargoflow_graph_tuning={},
 )

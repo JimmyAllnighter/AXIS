@@ -35,7 +35,6 @@ industry.add_tile(
 )
 
 
-
 spriteset_ground = industry.add_spriteset(type="empty")
 spriteset_ground_overlay = industry.add_sprite(sprite_number=3943)
 

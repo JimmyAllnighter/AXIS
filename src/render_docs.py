@@ -1,23 +1,22 @@
-print("[RENDER DOCS] render docs")
-
 import codecs  # used for writing files - more unicode friendly than standard open() module
-
+import colorsys
+import os
 import shutil
 import sys
-import os
-
-currentdir = os.curdir
 from time import time
 
-import markdown
-from PIL import Image
-import colorsys
-
-import utils as utils
-import global_constants as global_constants
-from polar_fox import git_info
 import firs
+import global_constants as global_constants
+import markdown
+import utils as utils
+from chameleon import PageTemplateLoader  # chameleon used in most template cases
 from incompatible_grfs import incompatible_grfs
+from PIL import Image
+from polar_fox import git_info
+
+print("[RENDER DOCS] render docs")
+
+currentdir = os.curdir
 
 docs_src = os.path.join(currentdir, "src", "docs_templates")
 docs_output_path = os.path.join(currentdir, "docs")
@@ -34,7 +33,6 @@ shutil.copy(os.path.join(docs_src, "index.html"), docs_output_path)
 # we'll be processing some extra images and saving them into the img dir
 images_dir_dst = os.path.join(static_dir_dst, "img")
 
-from chameleon import PageTemplateLoader  # chameleon used in most template cases
 
 # setup the places we look for templates
 docs_templates = PageTemplateLoader(docs_src, format="text")

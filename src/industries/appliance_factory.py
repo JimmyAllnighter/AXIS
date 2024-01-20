@@ -13,12 +13,12 @@ industry = IndustrySecondary(
     fund_cost_multiplier="95",
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
-industry.economy_variations['STEELTOWN'].enabled = True
+industry.economy_variations["STEELTOWN"].enabled = True
 industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
     ("STAL", 2),
-    ("STSH", 2),  
+    ("STSH", 2),
     ("GLAS", 1),
     ("PPAR", 1),
     ("POWR", 1),
@@ -332,8 +332,18 @@ industry.add_industry_layout(
             "appliance_factory_tile_1",
             "appliance_factory_spritelayout_tyres",
         ),
-        (3, 0, "appliance_factory_tile_1", "appliance_factory_spritelayout_rear_assembly_hall"),
-        (3, 1, "appliance_factory_tile_1", "appliance_factory_spritelayout_rear_assembly_hall"),
+        (
+            3,
+            0,
+            "appliance_factory_tile_1",
+            "appliance_factory_spritelayout_rear_assembly_hall",
+        ),
+        (
+            3,
+            1,
+            "appliance_factory_tile_1",
+            "appliance_factory_spritelayout_rear_assembly_hall",
+        ),
         (3, 2, "appliance_factory_tile_1", "appliance_factory_spritelayout_chimney"),
         (3, 3, "appliance_factory_tile_1", "appliance_factory_spritelayout_offices_1"),
     ],
@@ -415,8 +425,18 @@ industry.add_industry_layout(
             "appliance_factory_spritelayout_metal",
         ),
         (3, 0, "appliance_factory_tile_1", "appliance_factory_spritelayout_offices_1"),
-        (3, 1, "appliance_factory_tile_1", "appliance_factory_spritelayout_rear_assembly_hall"),
-        (3, 2, "appliance_factory_tile_1", "appliance_factory_spritelayout_rear_assembly_hall"),
+        (
+            3,
+            1,
+            "appliance_factory_tile_1",
+            "appliance_factory_spritelayout_rear_assembly_hall",
+        ),
+        (
+            3,
+            2,
+            "appliance_factory_tile_1",
+            "appliance_factory_spritelayout_rear_assembly_hall",
+        ),
         (3, 3, "appliance_factory_tile_1", "appliance_factory_spritelayout_tyres"),
         (4, 0, "appliance_factory_tile_1", "appliance_factory_spritelayout_offices_1"),
         (4, 1, "appliance_factory_tile_1", "appliance_factory_spritelayout_metal"),

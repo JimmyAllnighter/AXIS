@@ -3,18 +3,18 @@ from industry import IndustrySecondary, TileLocationChecks
 industry = IndustrySecondary(
     id="solvay_plant",
     accept_cargos_with_input_ratios=[("SALT", 8)],
-    combined_cargos_boost_prod=True, 
+    combined_cargos_boost_prod=True,
     prod_cargo_types_with_output_ratios=[("SASH", 6)],
     prob_in_game="3",
     prob_map_gen="5",
-    prod_multiplier="[0, 0]", 
+    prod_multiplier="[0, 0]",
     map_colour="191",
     name="string(STR_IND_SOLVAY_PLANT)",
     nearby_station_name="string(STR_STATION_BRINE_WORKS)",
     fund_cost_multiplier="170",
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
 industry.economy_variations["STEELTOWN"].enabled = True
 industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
@@ -34,9 +34,8 @@ industry.economy_variations["BASIC_TROPIC"].accept_cargos_with_input_ratios = [
 ]
 industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_output_ratios = [
     ("SASH", 8),
-    #ENUM?
+    # ENUM?
 ]
-
 
 
 industry.add_tile(

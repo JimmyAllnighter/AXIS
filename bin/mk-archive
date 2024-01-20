@@ -2,7 +2,12 @@
 """
 Construct an archive from a set of files.
 """
-import sys, getopt, tarfile, zipfile, os
+import getopt
+import os
+import sys
+import tarfile
+import zipfile
+
 
 def make_tar_archive(dest_file, file_format, tuplets, verbose):
     """

@@ -18,7 +18,7 @@ industry.economy_variations["BASIC_TROPIC"].enabled = True
 
 industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_multipliers = [
     ("NITR", 18),
-    #ENUM?
+    # ENUM?
 ]
 
 

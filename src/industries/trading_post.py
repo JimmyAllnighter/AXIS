@@ -1,11 +1,13 @@
-#convert into shipbreaker?
+# convert into shipbreaker?
 
 from industry import IndustryPrimaryExtractive, TileLocationChecks
 
 industry = IndustryPrimaryExtractive(
     id="trading_post",
     accept_cargo_types=[],
-    prod_cargo_types_with_multipliers=[("SCMT", 12),],
+    prod_cargo_types_with_multipliers=[
+        ("SCMT", 12),
+    ],
     prob_in_game="2",
     prob_map_gen="6",
     map_colour="37",

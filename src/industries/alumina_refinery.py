@@ -14,10 +14,9 @@ industry = IndustrySecondary(
     graphics_change_dates=[],
 )
 
-industry.economy_variations['STEELTOWN'].enabled = True
+industry.economy_variations["STEELTOWN"].enabled = True
 
 # industry.economy_variations['IN_A_HOT_COUNTRY'].enabled = True
-
 
 
 industry.add_tile(
@@ -33,7 +32,7 @@ industry.add_tile(
 # spriteset_ground = industry.add_sprite(sprite_number="GROUNDTILE_MUD_TRACKS")
 
 spriteset_ground = industry.add_spriteset(
-    type='dirty_concrete',
+    type="dirty_concrete",
 )
 
 spriteset_ground_overlay = industry.add_spriteset(

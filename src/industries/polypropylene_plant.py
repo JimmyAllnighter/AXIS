@@ -14,7 +14,7 @@ industry = IndustrySecondary(
     intro_year="1900",
 )
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
 industry.economy_variations["STEELTOWN"].enabled = True
 industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
@@ -24,7 +24,6 @@ industry.economy_variations["STEELTOWN"].accept_cargos_with_input_ratios = [
 industry.economy_variations["STEELTOWN"].prod_cargo_types_with_output_ratios = [
     ("RUBR", 8),
 ]
-
 
 
 industry.add_tile(
@@ -118,14 +117,12 @@ industry.add_spritelayout(
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_5],
-
 )
 industry.add_spritelayout(
     id="polypropylene_plant_spritelayout_6",
     ground_sprite=spriteset_ground,
     ground_overlay=spriteset_ground_overlay,
     building_sprites=[spriteset_6],
-
 )
 industry.add_spritelayout(
     id="polypropylene_plant_spritelayout_7",
@@ -171,7 +168,12 @@ industry.add_industry_layout(
         (2, 1, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_2"),
         (2, 2, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_7"),
         (3, 0, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_10"),
-        (3, 1, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_concrete"),
+        (
+            3,
+            1,
+            "polypropylene_plant_tile_1",
+            "polypropylene_plant_spritelayout_concrete",
+        ),
         (3, 2, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_7"),
     ],
 )
@@ -251,7 +253,12 @@ industry.add_industry_layout(
         (2, 2, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_5"),
         (3, 0, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_1"),
         (3, 1, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_10"),
-        (3, 2, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_concrete"),
+        (
+            3,
+            2,
+            "polypropylene_plant_tile_1",
+            "polypropylene_plant_spritelayout_concrete",
+        ),
         (4, 0, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_7"),
         (4, 1, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_7"),
         (4, 2, "polypropylene_plant_tile_1", "polypropylene_plant_spritelayout_9"),

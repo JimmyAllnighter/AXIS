@@ -35,7 +35,6 @@ industry.economy_variations["STEELTOWN"].prod_cargo_types_with_output_ratios = [
 ]
 
 
-
 industry.add_tile(
     id="pyrite_smelter_tile_1",
     animation_length=7,

@@ -14,7 +14,7 @@ industry = IndustrySecondary(
 )
 
 
-industry.economy_variations['BETTER_LIVING_THROUGH_CHEMISTRY'].enabled = True
+industry.economy_variations["BETTER_LIVING_THROUGH_CHEMISTRY"].enabled = True
 
 industry.economy_variations["IN_A_HOT_COUNTRY"].enabled = True
 industry.economy_variations["IN_A_HOT_COUNTRY"].accept_cargos_with_input_ratios = [
@@ -34,7 +34,6 @@ industry.economy_variations["BASIC_TROPIC"].prod_cargo_types_with_output_ratios 
     ("TEXT", 7),
     ("GOOD", 4),
 ]
-
 
 
 industry.add_tile(

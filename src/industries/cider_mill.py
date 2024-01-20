@@ -2,14 +2,26 @@ from industry import IndustrySecondary, TileLocationChecks
 
 industry = IndustrySecondary(
     id="cider_mill",
-    accept_cargos_with_input_ratios=[("FRUT", 3), ("SGCN", 3),("MNSP", 1), ("ENUM", 1)],
+    accept_cargos_with_input_ratios=[
+        ("FRUT", 3),
+        ("SGCN", 3),
+        ("MNSP", 1),
+        ("ENUM", 1),
+    ],
     combined_cargos_boost_prod=True,
-    prod_cargo_types_with_output_ratios=[("BEER", 6), ("ACET", 3), ("BIOM", 2),],
+    prod_cargo_types_with_output_ratios=[
+        ("BEER", 6),
+        ("ACET", 3),
+        ("BIOM", 2),
+    ],
     prob_in_game="3",
     prob_map_gen="5",
     map_colour="191",
     location_checks=dict(
-        near_at_least_one_of_these_keystone_industries=[["vineyard", "arable_farm"], 72],
+        near_at_least_one_of_these_keystone_industries=[
+            ["vineyard", "arable_farm"],
+            72,
+        ],
         same_type_distance=72,
     ),
     name="string(STR_IND_DISTILLERY)",
@@ -111,7 +123,6 @@ industry.add_industry_layout(
         (1, 0, "cider_mill_tile_1", "cider_mill_spritelayout_tanks"),
         (2, 0, "cider_mill_tile_1", "cider_mill_spritelayout_empty"),
         (3, 0, "cider_mill_tile_1", "cider_mill_spritelayout_produce_yard"),
-
         (0, 1, "cider_mill_tile_1", "cider_mill_spritelayout_chimneys"),
         (1, 1, "cider_mill_tile_1", "cider_mill_spritelayout_building_a"),
         (2, 1, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),
@@ -126,15 +137,13 @@ industry.add_industry_layout(
         (1, 0, "cider_mill_tile_1", "cider_mill_spritelayout_tanks"),
         (2, 0, "cider_mill_tile_1", "cider_mill_spritelayout_empty"),
         (3, 0, "cider_mill_tile_1", "cider_mill_spritelayout_tanks"),
-
         (0, 1, "cider_mill_tile_1", "cider_mill_spritelayout_building_a"),
         (1, 1, "cider_mill_tile_1", "cider_mill_spritelayout_chimneys"),
         (2, 1, "cider_mill_tile_1", "cider_mill_spritelayout_produce_yard"),
         (3, 1, "cider_mill_tile_1", "cider_mill_spritelayout_produce_yard"),
-
         (0, 2, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),
         (1, 2, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),
-        (2, 2, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),    
+        (2, 2, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),
     ],
 )
 
@@ -144,13 +153,11 @@ industry.add_industry_layout(
         (0, 0, "cider_mill_tile_1", "cider_mill_spritelayout_tanks"),
         (1, 0, "cider_mill_tile_1", "cider_mill_spritelayout_empty"),
         (2, 0, "cider_mill_tile_1", "cider_mill_spritelayout_produce_yard"),
-
         (0, 1, "cider_mill_tile_1", "cider_mill_spritelayout_tanks"),
         (1, 1, "cider_mill_tile_1", "cider_mill_spritelayout_building_a"),
         (2, 1, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),
-
         (0, 2, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),
         (1, 2, "cider_mill_tile_1", "cider_mill_spritelayout_chimneys"),
-        (2, 2, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),    
+        (2, 2, "cider_mill_tile_1", "cider_mill_spritelayout_building_b"),
     ],
 )

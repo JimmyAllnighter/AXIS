@@ -31,7 +31,7 @@ class LiteralGrfID(object):
 
 
 class IncompatibleGRF(object):
-    """ simple class to hold incompatible grfs, including optional properties for extended checks """
+    """simple class to hold incompatible grfs, including optional properties for extended checks"""
 
     def __init__(self, grfid, grfname):
         self._grfid = (

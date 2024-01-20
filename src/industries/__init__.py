@@ -1,524 +1,253 @@
+from industries import (
+    alumina_refinery,
+    aluminium_plant,
+    ammonia_plant,
+    appliance_factory,
+    arable_farm,
+    assembly_plant,
+    bakery,
+    basic_oxygen_furnace,
+    bauxite_mine,
+    biorefinery,
+    blast_furnace,
+    body_plant,
+    brewery,
+    brick_works,
+    builders_yard,
+    bulk_terminal,
+    carbon_black_plant,
+    cement_plant,
+    chemical_plant,
+    chlor_alkali_plant,
+    chromite_mine,
+    cider_mill,
+    civil_explosives_facility,
+    clay_pit,
+    cleaning_products_factory,
+    coal_mine,
+    coffee_estate,
+    coke_oven,
+    component_factory,
+    copper_concentrator,
+    copper_mine,
+    copper_refinery,
+    cryo_plant,
+    dairy,
+    dairy_farm,
+    diamond_mine,
+    dredging_site,
+    edible_oil_refinery,
+    electric_arc_furnace,
+    electrical_works,
+    engine_plant,
+    ethylene_cracker,
+    farm,
+    farm_supply_yard,
+    ferrochrome_smelter,
+    fertiliser_plant,
+    fischer_tropsch_plant,
+    fish_farm,
+    fishing_grounds,
+    fishing_harbour,
+    flour_mill,
+    food_market,
+    food_processor,
+    forest,
+    fruit_packing_plant,
+    fruit_plantation,
+    furniture_factory,
+    general_store,
+    glass_works,
+    hardware_store,
+    herding_coop,
+    hotel,
+    integrated_steel_mill,
+    iron_ore_mine,
+    iron_works,
+    junk_yard,
+    latex_processor,
+    lime_kiln,
+    limestone_mine,
+    liquids_terminal,
+    lumber_yard,
+    machine_shop,
+    manganese_mine,
+    meat_packing_plant,
+    metal_workshop,
+    nitrate_mine,
+    oil_refinery,
+    oil_rig,
+    oil_wells,
+    orchard_piggery,
+    paint_factory,
+    paper_mill,
+    peatlands,
+    petrol_pump,
+    phosphate_mine,
+    phosphoric_acid_plant,
+    plastics_plant,  # should be one of the polymer plants (pvc?)
+    # from industries import plaza,
+    polyethylene_plant,
+    polypropylene_plant,
+    port,
+    potash_mine,
+    power_plant,
+    pyrite_mine,
+    pyrite_smelter,
+    quarry,
+    ranch,
+    recycling_depot,
+    recycling_plant,
+    rubber_plantation,
+    salt_evaporator,
+    salt_mine,
+    sawmill,
+    seaweed_farm,
+    sheep_farm,
+    sheet_and_pipe_mill,
+    slag_grinding_plant,
+    smithy_forge,
+    soda_ash_mine,
+    solvay_plant,
+    # from industries import steel_mill,
+    stockyard,
+    sugar_refinery,
+    sulphuric_acid_plant,
+    supply_yard,
+    tar_sands_mine,
+    textile_mill,
+    tinplate_works,
+    trading_post,
+    tyre_plant,
+    vehicle_distributor,
+    vineyard,
+    wharf,
+    wire_and_section_mill,
+)
+
 registered_industries = []
 
-# keep these alphabetised for ease of maintaining
-
-
-from industries import aluminium_plant
-aluminium_plant.industry.register()
-
-from industries import alumina_refinery
 alumina_refinery.industry.register()
- 
-from industries import ammonia_plant
+aluminium_plant.industry.register()
 ammonia_plant.industry.register()
-
-
-from industries import arable_farm
-
-arable_farm.industry.register()
-
-from industries import assembly_plant
-
-assembly_plant.industry.register()
-
-from industries import bakery
-
-bakery.industry.register()
-
-from industries import basic_oxygen_furnace
-
-basic_oxygen_furnace.industry.register()
-
-from industries import bauxite_mine
-
-bauxite_mine.industry.register()
-
-from industries import biorefinery
-biorefinery.industry.register()
-
-
-from industries import blast_furnace
-
-blast_furnace.industry.register()
-
-from industries import body_plant
-
-body_plant.industry.register()
-
-from industries import brewery
-
-brewery.industry.register()
-
-
-from industries import brick_works
-brick_works.industry.register()
-
-
-from industries import builders_yard
-
-builders_yard.industry.register()
-
-from industries import bulk_terminal
-
-bulk_terminal.industry.register()
-
-from industries import carbon_black_plant
-
-carbon_black_plant.industry.register()
-
-from industries import cement_plant
-
-cement_plant.industry.register()
-
-from industries import chemical_plant
-
-chemical_plant.industry.register()
-
-from industries import chlor_alkali_plant
-
-chlor_alkali_plant.industry.register()
-
-from industries import cider_mill
-
-cider_mill.industry.register()
-
- 
-from industries import civil_explosives_facility
-civil_explosives_facility.industry.register()
-
-
-
-from industries import chromite_mine
-chromite_mine.industry.register()
-
-
-from industries import clay_pit
-
-clay_pit.industry.register()
-
-from industries import coal_mine
-
-coal_mine.industry.register()
-
-from industries import coffee_estate
-
-coffee_estate.industry.register()
-
-from industries import coke_oven
-
-coke_oven.industry.register()
-
-from industries import component_factory
-
-component_factory.industry.register()
-
-from industries import copper_mine
-
-copper_mine.industry.register()
-
-
-from industries import copper_concentrator
-copper_concentrator.industry.register()
-
-
-from industries import copper_refinery
-
-copper_refinery.industry.register()
-
-from industries import cryo_plant
-
-cryo_plant.industry.register()
-
-from industries import dairy
-
-dairy.industry.register()
-
-from industries import dairy_farm
-
-dairy_farm.industry.register()
-
-from industries import diamond_mine
-
-diamond_mine.industry.register()
-
-from industries import dredging_site
-
-dredging_site.industry.register()
-
-from industries import edible_oil_refinery
-
-edible_oil_refinery.industry.register()
-
-
-from industries import electric_arc_furnace
-
-electric_arc_furnace.industry.register()
-
-from industries import engine_plant
-
-engine_plant.industry.register()
-
- 
-from industries import ethylene_cracker
-ethylene_cracker.industry.register()
-
-
- 
-from industries import appliance_factory
 appliance_factory.industry.register()
-
-from industries import cleaning_products_factory
+arable_farm.industry.register()
+assembly_plant.industry.register()
+bakery.industry.register()
+basic_oxygen_furnace.industry.register()
+bauxite_mine.industry.register()
+biorefinery.industry.register()
+blast_furnace.industry.register()
+body_plant.industry.register()
+brewery.industry.register()
+brick_works.industry.register()
+builders_yard.industry.register()
+bulk_terminal.industry.register()
+carbon_black_plant.industry.register()
+cement_plant.industry.register()
+chemical_plant.industry.register()
+chlor_alkali_plant.industry.register()
+chromite_mine.industry.register()
+cider_mill.industry.register()
+civil_explosives_facility.industry.register()
+clay_pit.industry.register()
 cleaning_products_factory.industry.register()
-
-from industries import paint_factory
-paint_factory.industry.register()
-
-
-from industries import farm
-
-farm.industry.register()
-
-from industries import farm_supply_yard
-
-farm_supply_yard.industry.register()
-
-
-from industries import ferrochrome_smelter
-ferrochrome_smelter.industry.register()
-
-
- 
-from industries import fertiliser_plant
-fertiliser_plant.industry.register()
-
-
-
-from industries import fischer_tropsch_plant
-fischer_tropsch_plant.industry.register()
-
-
-from industries import flour_mill
-
-flour_mill.industry.register()
-
-
-from industries import food_market
-food_market.industry.register()
-
-
-from industries import food_processor
-
-food_processor.industry.register()
-
-from industries import fish_farm
-
-fish_farm.industry.register()
-
-from industries import fishing_grounds
-
-fishing_grounds.industry.register()
-
-from industries import fishing_harbour
-
-fishing_harbour.industry.register()
-
-from industries import forest
-
-forest.industry.register()
-
-from industries import fruit_packing_plant
-
-fruit_packing_plant.industry.register()
-
-from industries import fruit_plantation
-
-fruit_plantation.industry.register()
-
- 
-from industries import furniture_factory
-furniture_factory.industry.register()
-
-
-from industries import general_store
-
-general_store.industry.register()
-
-from industries import glass_works
-
-glass_works.industry.register()
-
-from industries import hardware_store
-
-hardware_store.industry.register()
-
-from industries import hotel
-
-hotel.industry.register()
-
-from industries import herding_coop
-
-herding_coop.industry.register()
-
-from industries import integrated_steel_mill
-
-integrated_steel_mill.industry.register()
-
-from industries import iron_ore_mine
-
-iron_ore_mine.industry.register()
-
-
-from industries import iron_works
-iron_works.industry.register()
-
-
-from industries import junk_yard
-
-junk_yard.industry.register()
-
-
-from industries import latex_processor
-latex_processor.industry.register()
-
-
-from industries import lime_kiln
-
-lime_kiln.industry.register()
-
-from industries import limestone_mine
-
-limestone_mine.industry.register()
-
-from industries import liquids_terminal
-
-liquids_terminal.industry.register()
-
-from industries import lumber_yard
-
-lumber_yard.industry.register()
-
-
-from industries import machine_shop
-machine_shop.industry.register()
-
-
-
-from industries import electrical_works
+coal_mine.industry.register()
+coffee_estate.industry.register()
+coke_oven.industry.register()
+component_factory.industry.register()
+copper_concentrator.industry.register()
+copper_mine.industry.register()
+copper_refinery.industry.register()
+cryo_plant.industry.register()
+dairy.industry.register()
+dairy_farm.industry.register()
+diamond_mine.industry.register()
+dredging_site.industry.register()
+edible_oil_refinery.industry.register()
+electric_arc_furnace.industry.register()
 electrical_works.industry.register()
-
-
-from industries import manganese_mine
-
+engine_plant.industry.register()
+ethylene_cracker.industry.register()
+farm.industry.register()
+farm_supply_yard.industry.register()
+ferrochrome_smelter.industry.register()
+fertiliser_plant.industry.register()
+fischer_tropsch_plant.industry.register()
+fish_farm.industry.register()
+fishing_grounds.industry.register()
+fishing_harbour.industry.register()
+flour_mill.industry.register()
+food_market.industry.register()
+food_processor.industry.register()
+forest.industry.register()
+fruit_packing_plant.industry.register()
+fruit_plantation.industry.register()
+furniture_factory.industry.register()
+general_store.industry.register()
+glass_works.industry.register()
+hardware_store.industry.register()
+herding_coop.industry.register()
+hotel.industry.register()
+integrated_steel_mill.industry.register()
+iron_ore_mine.industry.register()
+iron_works.industry.register()
+junk_yard.industry.register()
+latex_processor.industry.register()
+lime_kiln.industry.register()
+limestone_mine.industry.register()
+liquids_terminal.industry.register()
+lumber_yard.industry.register()
+machine_shop.industry.register()
 manganese_mine.industry.register()
-
-
-from industries import meat_packing_plant
-
 meat_packing_plant.industry.register()
-
-
-from industries import metal_workshop
-
 metal_workshop.industry.register()
-
-from industries import nitrate_mine
-
 nitrate_mine.industry.register()
-
-from industries import oil_wells
-
-oil_wells.industry.register()
-
- 
-from industries import oil_refinery
 oil_refinery.industry.register()
-
-
-from industries import oil_rig
-
 oil_rig.industry.register()
-
-from industries import orchard_piggery
-
+oil_wells.industry.register()
 orchard_piggery.industry.register()
-
-from industries import paper_mill
-
+paint_factory.industry.register()
 paper_mill.industry.register()
-
-from industries import peatlands
-
 peatlands.industry.register()
-
-from industries import petrol_pump
-
 petrol_pump.industry.register()
-
-from industries import phosphate_mine
-
 phosphate_mine.industry.register()
-
- 
-from industries import phosphoric_acid_plant
 phosphoric_acid_plant.industry.register()
-
-
-  # should be one of the polymer plants (pvc?)
-from industries import plastics_plant
 plastics_plant.industry.register()
-
-"""
-from industries import plaza
-
-plaza.industry.register()
-"""
- 
-from industries import polyethylene_plant
+# plaza.industry.register()
 polyethylene_plant.industry.register()
-
-from industries import polypropylene_plant
 polypropylene_plant.industry.register()
-
-
-from industries import port
-
 port.industry.register()
-
-from industries import power_plant
-
-power_plant.industry.register()
-
-from industries import potash_mine
-
 potash_mine.industry.register()
-
-from industries import pyrite_mine
-
+power_plant.industry.register()
 pyrite_mine.industry.register()
-
-from industries import pyrite_smelter
-
 pyrite_smelter.industry.register()
-
-from industries import quarry
-
 quarry.industry.register()
-
-from industries import ranch
-
 ranch.industry.register()
-
-
-from industries import recycling_depot
 recycling_depot.industry.register()
-
-
-
-from industries import recycling_plant
 recycling_plant.industry.register()
-
-
-from industries import rubber_plantation
-
 rubber_plantation.industry.register()
-
- 
-from industries import salt_mine
-salt_mine.industry.register()
-
-from industries import salt_evaporator
 salt_evaporator.industry.register()
-
-from industries import sawmill
-
+salt_mine.industry.register()
 sawmill.industry.register()
-
-from industries import seaweed_farm
 seaweed_farm.industry.register()
-
-from industries import sheep_farm
 sheep_farm.industry.register()
-
-
-from industries import sheet_and_pipe_mill
-
 sheet_and_pipe_mill.industry.register()
-
-from industries import slag_grinding_plant
-
 slag_grinding_plant.industry.register()
-
-from industries import soda_ash_mine
-
-soda_ash_mine.industry.register()
-
- 
-from industries import solvay_plant
-solvay_plant.industry.register()
-
-
-
-from industries import smithy_forge
 smithy_forge.industry.register()
-
-
-"""
-from industries import steel_mill
-steel_mill.industry.register()
-"""
-
-from industries import stockyard
-
+soda_ash_mine.industry.register()
+solvay_plant.industry.register()
+# steel_mill.industry.register()
 stockyard.industry.register()
-
-
-from industries import sugar_refinery
 sugar_refinery.industry.register()
-
-
- 
-from industries import sulphuric_acid_plant
 sulphuric_acid_plant.industry.register()
-
-
-from industries import supply_yard
-
 supply_yard.industry.register()
-
-from industries import tar_sands_mine
-
 tar_sands_mine.industry.register()
-
- 
-from industries import textile_mill
 textile_mill.industry.register()
-
-
- 
-from industries import tinplate_works
 tinplate_works.industry.register()
-
-
-from industries import trading_post
-
 trading_post.industry.register()
-
-from industries import tyre_plant
-
 tyre_plant.industry.register()
-
-from industries import vehicle_distributor
-
 vehicle_distributor.industry.register()
-
-from industries import vineyard
-
 vineyard.industry.register()
-
-from industries import wharf
-
 wharf.industry.register()
-
-from industries import wire_and_section_mill
-
 wire_and_section_mill.industry.register()

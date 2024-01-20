@@ -8,7 +8,10 @@ industry = IndustrySecondary(
     prob_map_gen="7",
     map_colour="163",
     location_checks=dict(
-        near_at_least_one_of_these_keystone_industries=[["ranch", "fruit_plantation"], 72],
+        near_at_least_one_of_these_keystone_industries=[
+            ["ranch", "fruit_plantation"],
+            72,
+        ],
     ),
     name="string(STR_IND_EDIBLE_OIL_REFINERY)",
     nearby_station_name="string(STR_STATION_OIL_PRESS)",
