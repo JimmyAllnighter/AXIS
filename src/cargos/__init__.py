@@ -1,142 +1,145 @@
-registered_cargos = []
 # keep these alphabetised for ease of maintaining
-from cargos import acetic_acid
-from cargos import acid
-from cargos import aggregates
-from cargos import alcohol
-from cargos import alloy_steel
-from cargos import aluminia
-from cargos import aluminium
-from cargos import ammonia
-from cargos import ammonium_nitrate
-from cargos import bauxite
-from cargos import beans
-from cargos import biomass
-from cargos import building_materials
-from cargos import carbon_black
-from cargos import carbon_steel
-from cargos import cassava
-from cargos import cast_iron
-from cargos import cement
-from cargos import chemicals
-from cargos import chlorine
-from cargos import chromite_ore
-from cargos import clay
-from cargos import cleaning_agents
-from cargos import coal
-from cargos import coal_tar
-from cargos import coffee
-from cargos import coke
-from cargos import copper
-from cargos import copper_concentrate
-from cargos import copper_ore
-from cargos import cranes_and_hoists
-from cargos import diamonds
-from cargos import edible_oil
-from cargos import electrical_parts
-from cargos import engineering_supplies
-from cargos import ethylene
-from cargos import explosives
-from cargos import farm_supplies
-from cargos import ferrochrome
-from cargos import fertiliser
-from cargos import fish
-from cargos import fish_and_meat
-from cargos import flour
-from cargos import food
-from cargos import food_additives
-from cargos import forgings_and_castings
-from cargos import formic_acid
-from cargos import fruits
-from cargos import furniture
-from cargos import glass
-from cargos import goods
-from cargos import grain
-from cargos import hardware
-from cargos import hydrochloric_acid
-from cargos import hydrogen
-from cargos import iron_ore
-from cargos import kaolin
-from cargos import lifting_equipment
-from cargos import livestock
-from cargos import limestone
-from cargos import logs
-from cargos import lumber
-from cargos import lye
-from cargos import mail
-from cargos import maize
-from cargos import manganese
-from cargos import meat
-from cargos import methanol
-from cargos import milk
-from cargos import naphtha
-from cargos import nickel
-from cargos import nitrates
-from cargos import nitrogen
-from cargos import nuts
-from cargos import oil
-from cargos import oil_seeds
-from cargos import oxygen
-from cargos import packaging
-from cargos import paints_and_coatings
-from cargos import paper
-from cargos import passengers
-from cargos import peat
-from cargos import petrol
-from cargos import phosphate
-from cargos import phosphoric_acid
-from cargos import pig_iron
-from cargos import pipe
-from cargos import pipework
-from cargos import plastics
-from cargos import plastic_parts
-from cargos import plant_fibres
-from cargos import potash
-from cargos import propylene
-from cargos import concrete_products
-from cargos import pumps_and_valves
-from cargos import pyrite_ore
-from cargos import quicklime
-from cargos import rare_metals
-from cargos import raw_latex
-from cargos import rebar
-from cargos import recyclables
-from cargos import rubber
-from cargos import sand
-from cargos import salt
-from cargos import scrap_metal
-from cargos import slag
-from cargos import soda_ash
-from cargos import stainless_steel
-from cargos import steel
-from cargos import steel_merchant_bar
-from cargos import steel_pipe
-from cargos import steel_sections
-from cargos import steel_sheet
-from cargos import steel_tube
-from cargos import steel_wire_rod
-from cargos import steel_wire_rope
-from cargos import stone
-from cargos import sugar
-from cargos import sugarcane
-from cargos import sugar_beet
-from cargos import sulphur
-from cargos import sulphuric_acid
-from cargos import textiles
-from cargos import timber
-from cargos import tin
-from cargos import tinplate
-from cargos import tyre_cord
-from cargos import tyres
-from cargos import urea
-from cargos import vehicle_bodies
-from cargos import vehicle_engines
-from cargos import vehicle_parts
-from cargos import vehicles
-from cargos import welding_consumables
-from cargos import wool
-from cargos import yarn
-from cargos import zinc
+from cargos import (
+    acetic_acid,
+    acid,
+    aggregates,
+    alcohol,
+    alloy_steel,
+    aluminia,
+    aluminium,
+    ammonia,
+    ammonium_nitrate,
+    bauxite,
+    beans,
+    biomass,
+    building_materials,
+    carbon_black,
+    carbon_steel,
+    cassava,
+    cast_iron,
+    cement,
+    chemicals,
+    chlorine,
+    chromite_ore,
+    clay,
+    cleaning_agents,
+    coal,
+    coal_tar,
+    coffee,
+    coke,
+    concrete_products,
+    copper,
+    copper_concentrate,
+    copper_ore,
+    cranes_and_hoists,
+    diamonds,
+    edible_oil,
+    electrical_parts,
+    engineering_supplies,
+    ethylene,
+    explosives,
+    farm_supplies,
+    ferrochrome,
+    fertiliser,
+    fish,
+    fish_and_meat,
+    flour,
+    food,
+    food_additives,
+    forgings_and_castings,
+    formic_acid,
+    fruits,
+    furniture,
+    glass,
+    goods,
+    grain,
+    hardware,
+    hydrochloric_acid,
+    hydrogen,
+    iron_ore,
+    kaolin,
+    lifting_equipment,
+    limestone,
+    livestock,
+    logs,
+    lumber,
+    lye,
+    mail,
+    maize,
+    manganese,
+    meat,
+    methanol,
+    milk,
+    naphtha,
+    nickel,
+    nitrates,
+    nitrogen,
+    nuts,
+    oil,
+    oil_seeds,
+    oxygen,
+    packaging,
+    paints_and_coatings,
+    paper,
+    passengers,
+    peat,
+    petrol,
+    phosphate,
+    phosphoric_acid,
+    pig_iron,
+    pipe,
+    pipework,
+    plant_fibres,
+    plastic_parts,
+    plastics,
+    potash,
+    propylene,
+    pumps_and_valves,
+    pyrite_ore,
+    quicklime,
+    rare_metals,
+    raw_latex,
+    rebar,
+    recyclables,
+    rubber,
+    salt,
+    sand,
+    scrap_metal,
+    slag,
+    soda_ash,
+    stainless_steel,
+    steel,
+    steel_merchant_bar,
+    steel_pipe,
+    steel_sections,
+    steel_sheet,
+    steel_tube,
+    steel_wire_rod,
+    steel_wire_rope,
+    stone,
+    sugar,
+    sugar_beet,
+    sugarcane,
+    sulphur,
+    sulphuric_acid,
+    textiles,
+    timber,
+    tin,
+    tinplate,
+    tyre_cord,
+    tyres,
+    urea,
+    vehicle_bodies,
+    vehicle_engines,
+    vehicle_parts,
+    vehicles,
+    welding_consumables,
+    wool,
+    yarn,
+    zinc,
+)
+
+registered_cargos = []
 
 acetic_acid.cargo.register()
 acid.cargo.register()
